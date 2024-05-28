@@ -49,10 +49,19 @@
 
 
     // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
+$('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 2000,
+    // Custom callback after the counter animation completes
+    complete: function () {
+        $(this).each(function () {
+            var currentText = $(this).text();
+            if (!currentText.endsWith('+')) {
+                $(this).text(currentText + '+');
+            }
+        });
+    }
+});
 
 
     // Project carousel
