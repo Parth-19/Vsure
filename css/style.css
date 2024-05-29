@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
     --primary: #393a3e;
-    --secondary: #E93C05;
+    --secondary: #AA6C39;
     --tertiary: #555555;
-    --light: #DFE4FD;
+    --light: #ffffff;
     --dark: #000000;
 }
 
@@ -413,6 +413,11 @@ h6,
     background: var(--primary);
     color: var(--light);
 }
+
+.golden-text {
+    color: #AA6C39;
+}
+
 
 
 /*** Testimonial ***/
