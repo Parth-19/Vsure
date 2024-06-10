@@ -544,3 +544,13 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+    .footer p,
+    
+
+    .footer p {
+        font-size: 14px; /* Adjust this value for paragraph text */
+    }
+
+   
+
